@@ -28,4 +28,4 @@ The included starter project represents a new Unity project where the following 
 
 
 ##Student Edit:
-1_) Using Unity 2018.1.4
+1_) Using Unity 2017.4.4
