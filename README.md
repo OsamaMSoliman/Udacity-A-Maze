@@ -28,4 +28,17 @@ The included starter project represents a new Unity project where the following 
 
 
 ##Student Edit:
-1_) Using Unity 2017.4.4
+1_) Simple VR Maze, player collect all coins to get out of the maze, and also have to find a key to open the door and claim the treasure chest.
+2_) Only a single scene named "Main"
+3_) Using Unity 2017.4.4 (as required)
+4_) GVR SDK for Unity v1.100.1 (as required)
+5_) Deployed for Android
+6_) Assets used:
+	[Magic Mirror Lite - Reflection for Unity](https://assetstore.unity.com/packages/tools/particles-effects/magic-mirror-lite-reflection-for-unity-34824)
+	[Water Fx Particles](https://assetstore.unity.com/packages/vfx/particles/environment/water-fx-particles-48580)
+	[Maze Generator](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
+7_) Screenshots:
+![Screenshot](1.png)
+![Screenshot](2.png)
+![Screenshot](3.png)
+![Screenshot](4.png)

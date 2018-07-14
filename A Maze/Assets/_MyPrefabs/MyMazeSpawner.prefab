@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1771713773136296}
+  m_IsPrefabParent: 1
+--- !u!1 &1771713773136296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4344579794284702}
+  - component: {fileID: 114816924947563324}
+  m_Layer: 0
+  m_Name: MyMazeSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4344579794284702
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771713773136296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35, y: 0, z: 10}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114816924947563324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771713773136296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbd480039f60a344bdc0ff90b9d70b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Algorithm: 1
+  FullRandom: 1
+  RandomSeed: 2888
+  Floor: {fileID: 165842, guid: c35fa30cea5230e4d94935327f499945, type: 2}
+  Wall: {fileID: 1108668081870148, guid: c7542f4b4f64e40459f1c2c4489a31dc, type: 2}
+  Pillar: {fileID: 1540965782128124, guid: 6e0a307388c6e584e9fc1573e93daebe, type: 2}
+  Rows: 10
+  Columns: 15
+  CellWidth: 5
+  CellHeight: 5
+  AddGaps: 0
+  _keyPrefab: {fileID: 114392897032230028, guid: 811b0e5916ae0af4a8d0bc763db5a466,
+    type: 2}
+  _coinPrefab: {fileID: 114430808390778448, guid: f369665c32a8acd4786aa47b9711cf8f,
+    type: 2}
+  numOfCoinToPass: 5
+  _waypointPrefab: {fileID: 114000010531311160, guid: 749ea01a62a9947538f52a6ddfad54d0,
+    type: 2}
+  _waypointHeight: 2

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using _MyScripts;
 
 namespace UdacityVR.Scripts {
     public class Key : MonoBehaviour {
@@ -6,7 +7,6 @@ namespace UdacityVR.Scripts {
         // Declare a GameObject named 'keyPoofPrefab' and assign the 'KeyPoof' prefab to the field in Unity
         // Declare a Door named 'door' and assign the top level 'Door' game object to the field in Unity
         [SerializeField] private GameObject _keyPoofPrefab;
-        [SerializeField] private Door       _door;
         [SerializeField] private float      _rotationSpeed  = 50f;
         [SerializeField] private float      _hoveringRange  = 0.5f;
         [SerializeField] private float      _hoveringHeight = 2f;
@@ -36,11 +36,7 @@ namespace UdacityVR.Scripts {
             // Use 'door' to call the Door.Unlock() method
             // Use Instantiate() to create a clone of the 'KeyPoof' prefab at this coin's position and with the 'KeyPoof' prefab's rotation
             // Use Destroy() to delete the key after for example 0.5 seconds
-            if (_door != null) {
-                _door.Unlock();
-            } else {
-                Debug.LogError("_door is not set", gameObject);
-            }
+            MyGameManager.Self.UnlockDoor();
 
             if (_keyPoofPrefab != null) {
                 Instantiate(_keyPoofPrefab, transform.position, _keyPoofPrefab.transform.rotation);
